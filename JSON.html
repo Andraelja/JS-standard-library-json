@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <script>
+
+        //JSON.stringify(), digunakan untuk koversi dari object ke string
+        //JSON.parse(), sebaliknya
+
+        const person = {
+            firstName: "Andra",
+            lastName: "Prama",
+            address: {
+                country: "Indonesia",
+                jalan: "kayangan"
+            }
+        }
+
+        const json = JSON.stringify(person)
+        console.log(json)
+
+        const jsonObject = JSON.parse(json)
+        console.log(jsonObject)
+
+    </script>
+</body>
+</html>
